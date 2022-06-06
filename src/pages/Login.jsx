@@ -2,7 +2,9 @@ import React from 'react';
 
 function Login() {
   return (
-    <div data-testid="page-login">Login</div>
+    <div data-testid="page-login">
+      <p>Login</p>
+    </div>
   );
 }
 

@@ -6,11 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import Routes from './Router/Routes';
 
 ReactDOM.render(
-  <BrowserRouter>
     <React.StrictMode>
       <App />
-      <Routes />
-    </React.StrictMode>
-  </BrowserRouter>,
+    </React.StrictMode>,
   document.getElementById('root'),
 );
