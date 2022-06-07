@@ -8,7 +8,7 @@ function Forms() {
   const [buttonOff, setButtonOff] = useState(true);
   const [errorMsg, setErrorMsg] = useState('');
   const [loading, setLoading] = useState(false);
-  const [logado, setLogado] = useState(false)
+  const [logado, setLogado] = useState(false);
   const NUMBER_NAME = 2;
 
   const handleChange = (e) => {
