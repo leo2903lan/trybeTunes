@@ -25,7 +25,8 @@ function Forms() {
     }
   };
 
-  const clicButton = async () => {
+  const clicButton = async (e) => {
+    e.preventDefault();
     setLoading(true);
     await createUser({ name });
     setLogado(true);
@@ -36,20 +37,19 @@ function Forms() {
   }
 
   return (
-    <form>
+    <form onSubmit={ clicButton }>
       <input
         data-testid="login-name-input"
         type="text"
-        name="name"
-        id=""
+        placeholder="Digite seu nome"
         onChange={ handleChange }
         value={ name }
       />
       <p>{ errorMsg }</p>
       <button
         data-testid="login-submit-button"
-        type="button"
-        onClick={ clicButton }
+        type="submit"
+        // onClick={ clicButton }
         disabled={ buttonOff }
       >
         Entrar
