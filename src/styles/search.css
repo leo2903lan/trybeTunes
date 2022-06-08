@@ -1,0 +1,11 @@
+.box-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}

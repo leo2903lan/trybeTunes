@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/react": "^3.2.2",
     "eslint": "^7.31.0",
     "eslint-config-trybe-frontend": "^1.2.1",
     "eslint-plugin-react": "^7.24.0",

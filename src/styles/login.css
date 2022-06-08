@@ -1,18 +1,18 @@
-/* .div-login {
-  align-items: center;
-  background: hsl(0, 0%, 98%);
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-} */
-
-div {
+.div-login {
   align-items: center;
   background: hsl(0, 0%, 98%);
   display: flex;
   flex-direction: column;
   justify-items: center;
 }
+
+/* div {
+  align-items: center;
+  background: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+} */
 
 .logo {
   height: 158px;
