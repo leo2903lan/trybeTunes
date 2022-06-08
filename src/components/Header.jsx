@@ -19,7 +19,6 @@ function Header() {
 
   return (
     <header data-testid="header-component">
-      Header
       { loading && <Carregando /> }
       <span data-testid="header-user-name">{ userName }</span>
       <Link data-testid="link-to-search" to="/search">Pesquisa</Link>

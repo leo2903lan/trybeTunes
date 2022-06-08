@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import Header from '../components/Header';
 
 function Album() {
-useEffect(() => {
-  
+  useEffect(() => {
+
   }, []);
 
   return (

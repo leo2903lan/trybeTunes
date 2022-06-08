@@ -37,16 +37,18 @@ function Forms() {
   }
 
   return (
-    <form onSubmit={ clicButton }>
+    <form className="form-login" onSubmit={ clicButton }>
       <input
+        className="name-input"
         data-testid="login-name-input"
         type="text"
         placeholder="Digite seu nome"
         onChange={ handleChange }
         value={ name }
       />
-      <p>{ errorMsg }</p>
+      <p className="alert">{ errorMsg }</p>
       <button
+        className="button-login"
         data-testid="login-submit-button"
         type="submit"
         // onClick={ clicButton }

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Carregando() {
   return (
-    <div>Carregando...</div>
+    <div className="loading">Carregando...</div>
   );
 }
 
