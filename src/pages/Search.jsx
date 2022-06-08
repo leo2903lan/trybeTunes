@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Icon } from '@iconify/react';
 import Header from '../components/Header';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import '../styles/search.css';
@@ -39,15 +40,20 @@ function Search() {
       <Header />
       <main className="main">
         { loading && (
-          <form onSubmit={ handleSubmit }>
-            <input
-              data-testid="search-artist-input"
-              type="text"
-              value={ artist }
-              onChange={ handleChange }
-              placeholder="Digite banda ou artista"
-            />
+          <form className="search-form-box" onSubmit={ handleSubmit }>
+            <div className="search-input-box">
+              <input
+                className="search-artist-input"
+                data-testid="search-artist-input"
+                type="text"
+                value={ artist }
+                onChange={ handleChange }
+                placeholder="Digite banda ou artista"
+              />
+              <Icon icon="fa:search" />
+            </div>
             <button
+              className="search-artist-button"
               data-testid="search-artist-button"
               type="submit"
               disabled={ buttonOff }
@@ -58,23 +64,26 @@ function Search() {
           </form>
         )}
         { aparece && (
-          <span>{`Resultado de álbuns de: ${artistName}`}</span>
+          <span className="artist-result">{`Resultado de álbuns de: ${artistName}`}</span>
         ) }
-        <ul>
+        <ul className="artist-box">
           {albuns.map((cd) => (
-            <li key={ cd.collectionId }>
+            <li className="album-box" key={ cd.collectionId }>
               <Link
+                className="album-box-link "
                 data-testid={ `link-to-album-${cd.collectionId}` }
                 to={ `/album/${cd.collectionId}` }
               >
-                <img src={ cd.artworkUrl100 } alt="capa do cd" />
-                {cd.collectionName}
+                <img className="img-box" src={ cd.artworkUrl100 } alt="capa do cd" />
+                <p className="cd-collection">{cd.collectionName}</p>
+                <p className="artist-name">{cd.artistName}</p>
               </Link>
 
             </li>
           ))}
         </ul>
-        { albuns.length === 0 && <p>Nenhum álbum foi encontrado</p> }
+        { albuns.length === 0
+          && <p className="not-album">Nenhum álbum foi encontrado</p> }
       </main>
 
     </div>

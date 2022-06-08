@@ -9,3 +9,100 @@
   flex-direction: column;
   margin-top: 90px;
 }
+
+.search-form-box {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.search-input-box {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  width: 300px;
+}
+
+.search-artist-input {
+  border: none;
+  padding: 4px;
+  width: 275px;
+}
+
+.search-artist-button {
+  background: #003be5;
+  border-radius: 2px;
+  color: white;
+  padding: 8px 32px;
+}
+
+.not-album {
+  color: #023031;
+  font-family: Epilogue;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  height: 117px;
+  letter-spacing: 0.02em;
+  line-height: 65px;
+}
+
+.artist-result {
+  color: #001813;
+  font-family: Epilogue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  height: 33px;
+  line-height: 25px;
+  margin-right: 790px;
+  margin-top: 50px;
+}
+
+.artist-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.album-box {
+  border: 1px solid #e1e5eb;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  width: 290px;
+}
+
+.album-box-link {
+  color: rgba(61, 73, 92, 1);
+  text-decoration: none;
+}
+
+.cd-collection {
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.artist-name {
+  font-family: Verdana;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 10px;
+
+}
+
+.img-box {
+  height: 180px;
+  width: 290px;
+}
