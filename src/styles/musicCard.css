@@ -3,19 +3,11 @@
   overflow: auto;
 }
 
-/* .player {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin: 8px 0 12px;
-} */
-
 .li-music {
   align-items: center;
   border-top: 1px solid #e1e5eb;
   display: flex;
   list-style: none;
-  /* width: 728px; */
 }
 
 .music-name {
@@ -23,9 +15,26 @@
 }
 
 .audio {
-  margin: 8px 25px 12px 30px;
+  margin: 12px 25px 12px 30px;
 }
 
 .label-favorita {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
   margin-right: 40px;
 }
+
+.heart {
+  font-size: 28px;
+}
+
+.label-favorita input:checked ~ .heart {
+  color: green;
+}
+
+.input-favorita {
+  margin: 0;
+  opacity: 0;
+}
+

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Icon } from '@iconify/react';
 import '../styles/musicCard.css';
 import Carregando from './Carregando';
 import { addSong } from '../services/favoriteSongsAPI';
@@ -49,6 +50,7 @@ function MusicCard(props) {
               value={ music.trackId }
               onChange={ handleChange }
             />
+            <Icon className="heart" icon="ant-design:heart-twotone" />
           </label>
         </li>
       ))}
