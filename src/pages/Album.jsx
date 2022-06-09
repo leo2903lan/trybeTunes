@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import getMusic from '../services/musicsAPI';
 import Carregando from '../components/Carregando';
 import MusicCard from '../components/MusicCard';
-import '../styles/album.css'
+import '../styles/album.css';
 
 function Album(props) {
   const { match: { params: { id } } } = props;
