@@ -22,14 +22,22 @@ function MusicCard(props) {
       { saveFavorite && <Carregando /> }
       { musicList.slice(1).map((music) => (
         <li className="li-music " key={ music.trackName }>
-          <p>{music.trackName}</p>
-          <audio data-testid="audio-component" src={ music.previewUrl } controls>
+          {/* <div className="player"> */}
+          <p className="music-name">{music.trackName}</p>
+          <audio
+            className="audio"
+            data-testid="audio-component"
+            src={ music.previewUrl }
+            controls
+          >
             <track kind="captions" />
             O seu navegador não suporta o elemento
             <code>audio</code>
             .
           </audio>
+          {/* </div> */}
           <label
+            className="label-favorita"
             htmlFor={ music.trackId }
           >
             Favoritas
