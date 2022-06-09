@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import getMusic from '../services/musicsAPI';
 import Carregando from '../components/Carregando';
 import MusicCard from '../components/MusicCard';
+import '../styles/album.css'
 
 function Album(props) {
   const { match: { params: { id } } } = props;
@@ -24,7 +25,7 @@ function Album(props) {
     <div className="box-principal" data-testid="page-album">
       <Header />
       { musicList.length === 0 ? <Carregando />
-        : <main className="main">
+        : <main className="main-album">
           <div className="box-cd">
             <img
               className="cd-capa"

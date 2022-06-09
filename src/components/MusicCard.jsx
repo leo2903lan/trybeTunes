@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/musicCard.css';
 
 function MusicCard(props) {
   const { musicList } = props;
   return (
     <ul className="list-music">
       { musicList.slice(1).map((music) => (
-        <li key={ music.trackName }>
+        <li className="li-music " key={ music.trackName }>
           <p>{music.trackName}</p>
           <audio data-testid="audio-component" src={ music.previewUrl } controls>
             <track kind="captions" />

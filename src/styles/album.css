@@ -1,0 +1,39 @@
+.box-principal-album {
+  display: flex;
+}
+
+.main-album {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.box-cd {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.cd-capa {
+  height: 290px;
+  width: 290px;
+}
+
+.album-name {
+  color: #023031;
+  font-family: Epilogue;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+}
+
+.artist-name {
+  color: #023031;
+  font-family: Epilogue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+}

@@ -1,0 +1,10 @@
+.list-music {
+  height: 400px;
+  overflow: auto;
+}
+
+.li-music {
+  list-style: none;
+  width: 728px;
+  border-top: 1px solid #E1E5EB;;
+}
