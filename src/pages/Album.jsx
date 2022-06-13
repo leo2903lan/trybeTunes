@@ -12,7 +12,6 @@ function Album(props) {
 
   const myGetmusicFetch = async () => {
     const myListMusic = await getMusic(id);
-    console.log(myListMusic, 'chegou da api');
     setMusicList(myListMusic);
   };
 
@@ -20,11 +19,11 @@ function Album(props) {
     myGetmusicFetch();
   }, []);
 
-  console.log(musicList, 'no sate');
   return (
     <div className="box-principal" data-testid="page-album">
       <Header />
-      { musicList.length === 0 ? <Carregando />
+      { musicList.length === 0
+        ? <Carregando />
         : <main className="main-album">
           <div className="box-cd">
             <img
@@ -40,14 +39,14 @@ function Album(props) {
             </p>
           </div>
           <MusicCard musicList={ musicList } />
-        </main> }
+        </main>}
     </div>
   );
 }
 
 Album.propTypes = {
   match: PropTypes.shape({
-    params: PropTypes.objectOf({
+    params: PropTypes.shape({
       id: PropTypes.string,
     }),
   }).isRequired,

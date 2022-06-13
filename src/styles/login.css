@@ -49,13 +49,23 @@
 
 .button-login {
   align-items: center;
-  background: #003be5;
+  background-color: #003be5;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fffefe;
   display: flex;
   gap: 10px;
   height: 40px;
   justify-content: center;
   padding: 8px 32px;
   width: 519px;
+}
+
+.button-login:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #0039e58a;
+  color: #bbb9b9b7;
 }

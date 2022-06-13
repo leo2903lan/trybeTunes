@@ -39,6 +39,10 @@
   padding: 8px 32px;
 }
 
+.search-artist-button:hover {
+  cursor: pointer;
+}
+
 .not-album {
   color: #023031;
   font-family: Epilogue;
