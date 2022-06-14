@@ -12,9 +12,9 @@ function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/trybeTunes" component={ Login } />
+        <Route path="/trybeTunes" component={ Login } />
         <Route path="/search" component={ Search } />
-        <Route path="/tfavorites" component={ Favorites } />
+        <Route path="/favorites" component={ Favorites } />
         <Route path="/profile/edit" component={ ProfileEdit } />
         <Route path="/profile" component={ Profile } />
         <Route
