@@ -12,12 +12,15 @@ function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={ Login } />
-        <Route path="/search" component={ Search } />
-        <Route path="/favorites" component={ Favorites } />
-        <Route path="/profile/edit" component={ ProfileEdit } />
-        <Route path="/profile" component={ Profile } />
-        <Route path="/album/:id" render={ (props) => <Album { ...props } /> } />
+        <Route exact path="/trybeTunes/" component={ Login } />
+        <Route path="/trybeTunes/search" component={ Search } />
+        <Route path="/trybeTunes/favorites" component={ Favorites } />
+        <Route path="/trybeTunes/profile/edit" component={ ProfileEdit } />
+        <Route path="/trybeTunes/profile" component={ Profile } />
+        <Route
+          path="/trybeTunes/album/:id"
+          render={ (props) => <Album { ...props } /> }
+        />
         <Route path="" component={ NotFound } />
       </Switch>
     </BrowserRouter>
