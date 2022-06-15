@@ -16,6 +16,8 @@
 Projeto realizado durante o curso de desenvolvimento web na Trybe.
 Foi desenvolvido utilizando as funções fornecidas na pasta "service" e se baseando pelos "tests", uma aplicação consultando a API de músicas da apple, listando os álbuns dos artistas e bandas, gravando uma lista de músicas favoritas no localStorage para que quando recarregada possa ser exibida na página de favoritos, além de deixar marcados os checkboxs que foram estilizados com coração.
 
+Refatorar esse projeto de classe para componente funcional me deu clareza em compreender o uso do useState, utilizar componetes controlados e renderização condicional, além de utilizar as props para passar atributos entre componentes.
+
 ---
 
 # Habilidades
@@ -61,39 +63,3 @@ Para garantir a qualidade do código, foi utilizado neste projeto os linters `ES
 Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível e de fácil manutenção! 
 
 ---
-
-
-## Execução de testes unitários
-
-#### Os testes já vieram fornecidos com o projeto!
-
-Vamos utilizar [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) para execução dos testes unitários.
-
-Esse _framework_ de testes utiliza algumas marcações no código para verificar a solução proposta, uma dessas marcações é o atributo `data-testid` e faremos uso dele aqui.
-
-Na descrição dos requisitos (logo abaixo) será pedido que seja feita a adição de atributos `data-testid` nos elementos _HTML_. Vamos a um exemplo para deixar essa configuração nítida:
-
-Se o requisito pedir "crie um botão e adicione o id de teste (ou `data-testid`) com o valor `my-action`, você pode criar:
-
-```html
-<button data-testid="my-action"></button>
-```
-
-ou
-
-```html
-<a data-testid="my-action"></a>
-```
-
-Ou seja, o atributo `data-testid="my-action"` servirá para o React Testing Library (RTL) identificar o elemento e, dessa forma, conseguiremos realizar testes unitários focados no comportamento da aplicação.
-
-**ATENÇÃO!** Muito cuidado com os nomes especificados nos requisitos! O conteúdo deve ser exatamente igual ao texto descrito no requisito.
-
-Para verificar a solução proposta, você pode executar todos os testes unitários localmente, basta executar:
-
-```bash
-npm test
-```
-
-
-
