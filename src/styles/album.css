@@ -49,7 +49,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: center; */
     justify-items: center;
     margin-top: 20px;
     /* margin-left: auto;
@@ -59,19 +59,25 @@
   .cd-capa {
     height: 150px;
     width: 150px;
+    margin: 0 auto;
   }
 
   .album-name {
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 20px;
   }
   
   .artist-name {
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
-    line-height: 20px;
+    line-height: 10px;
   }
+
+  .cd-hidden {
+    visibility: hidden;
+  }
+  
 }

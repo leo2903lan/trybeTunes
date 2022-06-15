@@ -38,3 +38,11 @@
   visibility: hidden;
 }
 
+@media (max-width: 550px)  {
+  .li-music {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
