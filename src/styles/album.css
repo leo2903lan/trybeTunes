@@ -5,10 +5,10 @@
 .main-album {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .box-cd {
@@ -44,7 +44,13 @@
 }
 
 
-@media (max-width: 550px)  {
+@media (max-width: 778px)  {
+  .box-principal-album {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
   .main-album {
     align-items: center;
     display: flex;
@@ -52,8 +58,16 @@
     /* justify-content: center; */
     justify-items: center;
     margin-top: 20px;
+    margin-left: 0;
     /* margin-left: auto;
     margin-right: auto; */
+  }
+
+  .box-cd {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .cd-capa {
@@ -73,11 +87,12 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
-    line-height: 10px;
+    line-height: 0;
   }
 
   .cd-hidden {
     visibility: hidden;
+    width: 1px;
   }
   
 }
