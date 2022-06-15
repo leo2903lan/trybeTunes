@@ -41,5 +41,37 @@
 
 .cd-hidden {
   height: 5px;
-  opacity: 0;
+}
+
+
+@media (max-width: 550px)  {
+  .main-album {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-top: 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+
+  .cd-capa {
+    height: 150px;
+    width: 150px;
+  }
+
+  .album-name {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  
+  .artist-name {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+  }
 }

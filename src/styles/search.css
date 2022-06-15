@@ -13,30 +13,32 @@
 .search-form-box {
   align-items: center;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
-  width: 450px;
+  /* width: 450px; */
 }
 
 .search-input-box {
   align-items: center;
   border: 1px solid black;
   display: flex;
+  /* gap: 10px; */
   justify-content: space-between;
   padding: 4px;
-  width: 300px;
+  /* width: 300px; */
 }
 
 .search-artist-input {
   border: none;
-  padding: 4px;
-  width: 275px;
+  padding: 8px;
+  /* width: 275px; */
 }
 
 .search-artist-button {
   background: #003be5;
   border-radius: 2px;
   color: white;
-  padding: 8px 32px;
+  padding: 10px 32px;
 }
 
 .search-artist-button:hover {
@@ -109,4 +111,10 @@
 .img-box {
   height: 180px;
   width: 290px;
+}
+
+@media (max-width: 550px)  {
+  .not-album {
+    font-size: 40px;
+    }
 }
