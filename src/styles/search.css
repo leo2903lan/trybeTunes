@@ -62,7 +62,7 @@
   font-weight: 300;
   height: 33px;
   line-height: 25px;
-  margin-right: 790px;
+  justify-content: flex-start;
   margin-top: 50px;
 }
 

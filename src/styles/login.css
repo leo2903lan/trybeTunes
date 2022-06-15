@@ -28,7 +28,8 @@
   flex-direction: column;
   height: 314px;
   justify-content: space-evenly;
-  width: 697px;
+  /* width: 697px; */
+  padding: 40px;
 }
 
 .name-input {
@@ -38,7 +39,7 @@
   gap: 10px;
   height: 45px;
   padding: 12px 16px;
-  width: 519px;
+  /* width: 519px; */
 }
 
 .alert {
@@ -58,7 +59,7 @@
   height: 40px;
   justify-content: center;
   padding: 8px 32px;
-  width: 519px;
+  /* width: 519px; */
 }
 
 .button-login:hover {
@@ -68,4 +69,13 @@
 button:disabled {
   background: #0039e58a;
   color: #bbb9b9b7;
+}
+
+@media (min-width: 550px)  {
+  .name-input {
+    width: 519px;
+    }
+    .button-login {
+    width: 519px;
+    }
 }

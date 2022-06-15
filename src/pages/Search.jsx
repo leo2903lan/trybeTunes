@@ -64,7 +64,7 @@ function Search() {
           </form>
         )}
         { aparece && (
-          <span className="artist-result">{`Resultado de álbuns de: ${artistName}`}</span>
+          <p className="artist-result">{`Resultado de álbuns de: ${artistName}`}</p>
         ) }
         <ul className="artist-box">
           {albuns.map((cd) => (

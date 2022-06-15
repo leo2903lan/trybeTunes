@@ -52,3 +52,8 @@
   justify-items: center;
   text-decoration: none;
 }
+
+.link:hover {
+  color: green;
+  text-shadow: #071800 1px 1px;
+}

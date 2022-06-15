@@ -21,7 +21,7 @@ function Routes() {
           path="/album/:id"
           render={ (props) => <Album { ...props } /> }
         />
-        <Route path="" component={ NotFound } />
+        <Route component={ NotFound } />
       </Switch>
     </BrowserRouter>
   );
