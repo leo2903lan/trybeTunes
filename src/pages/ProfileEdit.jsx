@@ -97,7 +97,7 @@ function ProfileEdit() {
             onChange={ handleImage }
           />
         </label>
-        <button type="submit">Editar</button>
+        <button className="button-edit" type="submit">Editar</button>
       </form>
     </div>
   );

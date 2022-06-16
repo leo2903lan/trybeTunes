@@ -12,3 +12,7 @@
   margin: 50px auto;
   padding: 40px;
 }
+
+.button-edit {
+  cursor: pointer;
+}

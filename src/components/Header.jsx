@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import { getUser } from '../services/userAPI';
 import Carregando from './Carregando';
-import '../styles/header.css';
 import logoHeader from '../assets/logo_header.svg';
+import '../styles/header.css';
 
 function Header() {
   const [userName, setUserName] = useState('');
